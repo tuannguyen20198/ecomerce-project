@@ -1,16 +1,4 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "apps/frontend/next.config.js",
-        "use": "@vercel/next"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/apps/frontend/$1"
-      }
-    ]
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
   }
   
