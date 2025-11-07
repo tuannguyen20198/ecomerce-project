@@ -1,4 +1,10 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    "buildCommand": "pnpm build",
+    "devCommand": "pnpm dev",
+    "installCommand": "pnpm install",
+    "rewrites": [
+      { "source": "/_next/static/(.*)", "destination": "/_next/static/$1" },
+      { "source": "/(.*)", "destination": "/" }
+    ]
   }
   
